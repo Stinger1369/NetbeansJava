@@ -50,16 +50,17 @@ public class HelloUniverse {
         voitureDeAmin.transporter(passager, marseille);
 
 
-               Ville destination= voitureDeBilel.transporter(passager,marseille);
+        Ville destination= voitureDeBilel.transporter(passager,marseille);
         System.out.println("Le passager est arrivée dans la ville de"+destination.nom);
         System.out.println("Le nombre des Roues de la voiture de bilel et :  "+voitureDeBilel.nbRoues );
         System.out.println("Le nombre des Roues d'une voiture en Generale est :  "+Voiture.nbRoues );
-         Voiture.nbRoues=6;
+        
         System.out.println("Le passager est arrivée dans la ville de"+destination.nom);
         System.out.println("Le nombre des Roues de la voiture de bilel et :  "+voitureDeBilel.nbRoues );
         System.out.println("Le nombre des Roues d'une voiture en Generale est :  "+Voiture.form );
         Voiture.klaxonner();
-
+        Voiture.tourner(true, 45);
+        
   }
 }
 
